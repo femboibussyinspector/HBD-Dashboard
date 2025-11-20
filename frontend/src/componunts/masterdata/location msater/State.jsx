@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Card, CardBody, CardHeader, Typography } from '@material-tailwind/react';
 import { stateData } from '@/data/state-data';
 
-const Country = () => {
+const State = () => {
   const [loading, setLoading] = useState(false);
   const [fullData] = useState(stateData);  
   const [data, setData] = useState([]);    
@@ -29,7 +29,7 @@ const Country = () => {
           color="gray"
           className="mb-8 p-4 flex items-center justify-between"
         >
-          <Typography variant="h6" color="white">Country Data</Typography>
+          <Typography variant="h6" color="white">State Data</Typography>
 
           <div className="flex items-center gap-4">
             <Button
@@ -115,4 +115,4 @@ const Country = () => {
   );
 };
 
-export default Country;
+export default State;

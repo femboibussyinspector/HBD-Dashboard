@@ -25,7 +25,6 @@ import ServiceCategory from "./componunts/masterdata/ServiceCategory";
 import ProductCategory from "./componunts/masterdata/ProductCategory";
 import ListingComplate from "./componunts/listing master data/ListingComplate";
 import ListingIncomplate from "./componunts/listing master data/ListingIncomplate";
-import Country from "./componunts/masterdata/location msater/Country";
 import ProductComplate from "./componunts/product master data/ProductComplate";
 import ProductIncomplate from "./componunts/product master data/ProductIncomplate";
 import ServiceComplate from "./componunts/service master data/ServiceComplate";
@@ -43,6 +42,12 @@ import DuplicateData from "./componunts/listing master data/DuplicateData";
 import OthersDataImport from "./componunts/data import/OthersDataImport";
 import SearchKeyword from "./componunts/SearchKeyword";
 import DmartScrapper from "./componunts/scrapper/DmartScrapper";
+import State from "./componunts/masterdata/location msater/State";
+import Country from "./componunts/masterdata/location msater/Country";
+import Area from "./componunts/masterdata/location msater/Area";
+import City from "./componunts/masterdata/location msater/City";
+import ListingComplete from "./componunts/listing master data/ListingComplate";
+import ProductComplete from "./componunts/product master data/ProductComplate";
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -120,19 +125,19 @@ export const routes = [
                 icon: <TableCellsIcon {...icon} />,
                 name: "State",
                 path: "/masterdata/location/state",
-                element:<Country />,
+                element:<State />,
               },
               {
                 icon: <TableCellsIcon {...icon} />,
                 name: "City",
                 path: "/masterdata/location/city",
-                element:<Country />,
+                element:<City />,
               },
               {
                 icon: <TableCellsIcon {...icon} />,
                 name: "Area",
                 path: "/masterdata/location/area",
-                element:<Country />,
+                element:<Area />,
               },
             ]
           },
@@ -157,13 +162,13 @@ export const routes = [
         ]},
       {
         icon: <TableCellsIcon {...icon} />,
-        name: "Listing Mster Data",
+        name: "Listing Master Data",
         children: [
           {
             icon:<CheckCircleIcon {...icon} />,
             name: "Complete Data",
             path: "listing-master-data/complete-data",
-            element: <ListingComplate/>,
+            element: <ListingComplete/>,
          },
           {
             icon: <XCircleIcon {...icon} />,
@@ -180,13 +185,13 @@ export const routes = [
         ]},
       {
         icon: <TableCellsIcon {...icon} />,
-        name: "Product Mster Data",
+        name: "Product Master Data",
         children: [
           {
             icon: <CheckCircleIcon {...icon} />,
             name: "Complete Data",
             path: "product-master-data/complete-data",
-            element:<ProductComplate/>,
+            element:<ProductComplete/>,
          },
           {
             icon: <XCircleIcon {...icon} />,
@@ -198,7 +203,7 @@ export const routes = [
       },
     {
         icon: <TableCellsIcon {...icon} />,
-        name: "Service Mster Data",
+        name: "Service Master Data",
         children: [
           {
             icon: <CheckCircleIcon {...icon} />,

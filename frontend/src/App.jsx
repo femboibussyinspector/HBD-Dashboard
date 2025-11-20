@@ -11,9 +11,11 @@ function App() {
       {/* <Route path="/dashboard/*" element={
         <Dashboard /> 
       } /> */}
-      <Route path="/dashboard/*" element={ <PrivateRoute>
+      <Route path="/dashboard/*" element={
+        // <PrivateRoute>
         <Dashboard />
-        </PrivateRoute>} />
+        // </PrivateRoute>
+      }/>
       {/* <Route path="/auth/*" element={<Auth />} /> */}
       <Route path="/auth/sign-in" element={<SignIn/>}/>
       <Route path="/auth/sign-up" element={<SignUp/>}/>
