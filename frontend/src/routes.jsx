@@ -109,6 +109,26 @@ export const routes = [
                 name: "Magicpin",  
                 path: "/data-imports/listing-data/magicpin",
                 element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "Atm",  
+                path: "/data-imports/listing-data/atm",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "Bank Data",  
+                path: "/data-imports/listing-data/bank-data",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "College Dunia",  
+                path: "/data-imports/listing-data/college-dunia",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "Heyplaces",  
+                path: "/data-imports/listing-data/Heyplaces",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
               }
             ]
           },{
