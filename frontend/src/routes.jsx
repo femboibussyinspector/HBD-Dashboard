@@ -206,6 +206,72 @@ export const routes = [
             name: "Complete Data",
             path: "listing-master-data/complete-data",
             element: <ListingComplete/>,
+         },{
+          icon: <TableCellsIcon {...icon} />, // <-- Changed to TableCellsIcon for data representation
+          name: "Zomato",
+          children: [
+            {  
+              icon:<CheckCircleIcon {...icon} />,
+              name: "",
+              path: "listing-master-data/",
+              element: <ListingComplete/>,
+            }
+          ]
+         },{
+          icon: <TableCellsIcon {...icon} />, // <-- Changed to TableCellsIcon for data representation
+          name: "Magicpin",
+          children: [
+            {  
+              icon:<CheckCircleIcon {...icon} />,
+              name: "",
+              path: "listing-master-data/",
+              element: <ListingComplete/>,
+            }
+          ]
+         },{
+          icon: <TableCellsIcon {...icon} />, // <-- Changed to TableCellsIcon for data representation
+          name: "Atm",
+          children: [
+            {  
+              icon:<CheckCircleIcon {...icon} />,
+              name: "",
+              path: "listing-master-data/",
+              element: <ListingComplete/>,
+            }
+          ]
+         },{
+          icon: <TableCellsIcon {...icon} />, // <-- Changed to TableCellsIcon for data representation
+          name: "Bank Data",
+          children: [
+            {  
+              icon:<CheckCircleIcon {...icon} />,
+              name: "",
+              path: "listing-master-data/",
+              element: <ListingComplete/>,
+            }
+          ]
+         },{
+          icon: <TableCellsIcon {...icon} />, // <-- Changed to TableCellsIcon for data representation
+          name: "College Dunia",
+          children: [
+            {  
+              icon:<CheckCircleIcon {...icon} />,
+              name: "",
+              path: "listing-master-data/",
+              element: <ListingComplete/>,
+            }
+          ]
+         },{
+          icon: <TableCellsIcon {...icon} />, // <-- Changed to TableCellsIcon for data representation
+          name: "Heyplaces",
+          children: [
+            {  
+              icon:<CheckCircleIcon {...icon} />,
+              name: "",
+              path: "listing-master-data/",
+              element: <ListingComplete/>,
+            }
+          ]
          },
           {
             icon: <XCircleIcon {...icon} />,
