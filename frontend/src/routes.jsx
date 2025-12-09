@@ -127,7 +127,7 @@ export const routes = [
                 element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
               },{
                 icon: <DocumentTextIcon {...icon} />,
-                name: "Bank Data",  
+                name: "Bank",  
                 path: "/data-imports/listing-data/bank-data",
                 element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
               },{
@@ -139,6 +139,41 @@ export const routes = [
                 icon: <DocumentTextIcon {...icon} />,
                 name: "Heyplaces",  
                 path: "/data-imports/listing-data/Heyplaces",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              }, {
+                icon: <DocumentTextIcon {...icon} />,
+                name: "Asklaila",
+                path: "/data-imports/listing-data/asklaila",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "JustDial",
+                path: "/data-imports/listing-data/justdial",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "PO India",
+                patch: "/data-imports/listing-data/po-india",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "Near Buy",
+                patch: "/data-imports/listing-data/near-buy",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "SchoolGis",
+                patch: "/data-imports/listing-data/school-gis",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "Yellow Pages",
+                patch: "/data-imports/listing-data/yellow-pages",
+                element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
+              },{
+                icon: <DocumentTextIcon {...icon} />,
+                name: "Pinda",
+                patch: "/data-imports/listing-data/pinda",
                 element: <ListingDataImport />, // Placeholder for Listing Data Uploader page
               }
             ]

@@ -75,7 +75,7 @@ const MagicPinData = () => {
 "latitude	"	,
 "longitude"	,
 "Requirement"].map((head) => (
-                  <th key={head} className="border-b border-blue-gray-50 py-3 px-5 text-left">
+                  <th key={head} className="border-b border-blue-gray-100 py-3 px-5 text-left">
                     <Typography
                       variant="small"
                       className="text-[15px] text-black font-bold uppercase "
@@ -89,12 +89,12 @@ const MagicPinData = () => {
 
             <tbody>
               {data.map((item, idx) => (
-                <tr key={idx}>
+                <tr key={idx} className='border-b border-blue-gray-50 py-3 px-5 text-left'>
                   <td className="py-3 px-5">{item.name		 || "-"}</td>
                   <td className="py-3 px-5">{item.number			 || "-"}</td>
                   <td className="py-3 px-5">{item.rating			 || "-"}</td>
                   <td className="py-3 px-5">{item.avgspent			 || "-"}</td>
-                  <td className="py-3 px-5">{item.address			 || "-"}</td>
+                  <td className="py-3 px-5"><div className="max-h-[80px] min-w-[220px] max-w-[260px] overflow-y-hidden overflow-x-hidden whitespace-normal break-words">{item.address			 || "-"}</div></td>
                   <td className="py-3 px-5">{item.area			 || "-"}</td>
                   <td className="py-3 px-5">{item.subcategory			 || "-"}</td>
                   <td className="py-3 px-5">{item.city			 || "-"}</td>
