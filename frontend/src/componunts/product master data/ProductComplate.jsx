@@ -79,9 +79,9 @@ const ProductComplete = () => {
             <tbody>
               {data.map((item, idx) => (
 
-                <tr key={item.name}>
+                <tr key={item.name} className="border-b border-blue-gray-50 py-3 px-5 text-left">
                   <td className="py-3 px-5">{item.ASIN || "-"}</td>
-                  <td className="py-3 px-5">{item.Product_name || "-"}</td>
+                  <td className="py-3 px-5"><div className="max-h-[80px] min-w-[220px] max-w-[260px] overflow-y-hidden overflow-x-hidden whitespace-normal break-words">{item.Product_name || "-"}</div></td>
                   <td className="py-3 px-5">{item.price || "-"}</td>
                   <td className="py-3 px-5">{item.rating || "-"}</td>
                   <td className="py-3 px-5">{item.Number_of_ratings || "-"}</td>
