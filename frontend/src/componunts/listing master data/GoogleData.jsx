@@ -147,7 +147,7 @@ const ListingComplete = () => {
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <Typography variant="h4" className="pb-2">
-          Magicpin Data
+          Google Data
         </Typography>
 
         <div className="flex items-center gap-2">
