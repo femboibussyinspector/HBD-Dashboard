@@ -25,7 +25,6 @@ export function Dasboard2() {
     loading: true,
   });
 
- 
   const staticData = {
     totalScrapped: 1200000,
   };
@@ -36,7 +35,6 @@ export function Dasboard2() {
         const response = await api.get("/googlemap_data");
         const products = response.data;
 
-        // Calculate unique counts
         const uniqueCities = new Set(products.map((p) => p.city)).size;
         const uniqueCategories = new Set(products.map((p) => p.category)).size;
 
@@ -55,7 +53,6 @@ export function Dasboard2() {
     fetchProductsData();
   }, []);
 
-  // Reusable Component for the Grid Cards
   const DashboardCard = ({ title, value, icon: Icon, color, link, subValue }) => (
     <Card className="relative overflow-hidden border border-white/10 bg-gradient-to-br from-gray-900 to-gray-800 shadow-xl transition-transform hover:scale-[1.02] duration-300">
       <CardBody className="p-6">
@@ -94,7 +91,6 @@ export function Dasboard2() {
   return (
     <div className="mt-10 flex w-full flex-col gap-6 min-h-screen pb-10">
       
-      {/* -------------------- ROW 1: TOTAL COUNT (Full Width) -------------------- */}
       <Card className="relative w-full overflow-hidden border border-white/10 bg-gradient-to-r from-gray-600 to-gray-900 shadow-2xl">
         <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 -mb-4 -ml-4 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
@@ -112,7 +108,6 @@ export function Dasboard2() {
         </CardBody>
       </Card>
 
-      {/* -------------------- ROW 2: PRIMARY METRICS (Cities & Categories) -------------------- */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <DashboardCard
           title="Cities Scrapped"
@@ -130,9 +125,7 @@ export function Dasboard2() {
         />
       </div>
 
-      {/* -------------------- ROW 3: DETAILED DATA (Product & Listings) -------------------- */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Left: Product Data (Static) */}
         <DashboardCard
           title="Product Data"
           subValue="Global Historical Records"
@@ -142,7 +135,6 @@ export function Dasboard2() {
           link="/dashboard/productdata-report"
         />
 
-        {/* Right: Listing Data (Dynamic) */}
         <DashboardCard
           title="Listing Data"
           subValue="Live Google Maps API"
@@ -153,8 +145,6 @@ export function Dasboard2() {
         />
       </div>
 
-      {/* -------------------- ROW 4: SECONDARY METRICS (Small Footer Stats) -------------------- */}
-      {/* Depending on if you actually have unique data for these, or if they are duplicates of Row 2 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card className="border border-white/5 bg-gradient-to-r from-gray-600 to-gray-900">
           <CardBody className="flex items-center justify-between p-4">
@@ -181,7 +171,6 @@ export function Dasboard2() {
         </Card>
       </div>
 
-      {/* -------------------- FOOTER -------------------- */}
       <footer className="mt-auto pt-6 border-t border-white/10 text-center md:text-left">
         <Typography variant="small" className="font-normal text-white/40">
           &copy; {new Date().getFullYear()} ScrapeMaster Dashboard. All Rights Reserved.
